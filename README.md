@@ -9,8 +9,9 @@ jsDelivr (`https://cdn.jsdelivr.net/gh/elios134/sc-fleet-starmap-data@main/...`)
   surface (lon/lat), consommé par la commande Rust `starmap_geometry` (cache hors-ligne).
 - **`planets/<clé>.webp`** — textures équirectangulaires par corps (clé = nom normalisé :
   minuscules, sans accents ni ponctuation, p. ex. `microtech.webp`). Chargées en direct par
-  `THREE.TextureLoader` (jsDelivr sert avec CORS). **À ajouter.** En leur absence, l'app
-  retombe sur un rendu procédural — rien ne casse.
+  `THREE.TextureLoader` (jsDelivr sert avec CORS). Extraites de la carte du jeu
+  (`Data/UI/starmap/textures/*` du `Data.p4k`, 2048×1024, WebP) : Stanton, Pyro, Nyx.
+  Pyro V n'a pas de texture propre en jeu : l'app garde son rendu procédural.
 - **`source-csv/`** — CSV sources VerseTime (provenance + régénération).
 
 ## Régénérer `starmap-geo.json`
